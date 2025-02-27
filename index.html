@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
     <style>
         * {
             margin: 0;
@@ -9,23 +11,63 @@
             box-sizing: border-box;
         }
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #111;
+            color: white;
+            padding: 20px;
         }
-        video {
+        h1 {
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .video-link {
+            width: 200px;
+            text-decoration: none;
+            color: white;
+        }
+        .thumbnail {
             width: 100%;
-            height: 100vh;
-            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <video controls autoplay>
-        <source src="shinbi_doll.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <h1>🎬 Select a Video 🎬</h1>
+    <div class="container">
+        <a href="geumbi_doll.html" class="video-link">
+            <img src="thumbnail1.jpg" alt="geumbi_doll" class="thumbnail">
+            <p>Video 1</p>
+        </a>
+        <a href="shinbi_doll.html" class="video-link">
+            <img src="thumbnail2.jpg" alt="shinbi_doll" class="thumbnail">
+            <p>Video 2</p>
+        </a>
+        <a href="heartsping_toy.html" class="video-link">
+            <img src="thumbnail3.jpg" alt="heartsping_toy" class="thumbnail">
+            <p>Video 3</p>
+        </a>
+        <a href="heartsping_diary.html" class="video-link">
+            <img src="thumbnail4.jpg" alt="heartsping_diary" class="thumbnail">
+            <p>Video 4</p>
+        </a>
+        <a href="starguardian_toy.html" class="video-link">
+            <img src="thumbnail5.jpg" alt="starguardian_toy" class="thumbnail">
+            <p>Video 5</p>
+        </a>
+        <a href="heartsping_cake.html" class="video-link">
+            <img src="thumbnail6.jpg" alt="heartsping_cake" class="thumbnail">
+            <p>Video 6</p>
+        </a>
+    </div>
 </body>
 </html>
